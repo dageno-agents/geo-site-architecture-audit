@@ -11,3 +11,6 @@ Use this checklist to evaluate skill outputs.
 - Does it avoid promising guaranteed AI rankings or citations?
 - For multi-region sites, does it check language/region consistency?
 - For regulated industries, does it avoid unsafe claims and separate official evidence from reputation evidence?
+- Does it define or recommend a buyer-question monitoring set when validation is requested?
+- Does it check AI/search crawler access and internal discoverability before recommending content changes?
+- Does it explain when to use `seo-geo-audit` instead of this skill?

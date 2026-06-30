@@ -55,6 +55,10 @@ P2: [education/resource/freshness assets]
 ## Missing Pages Or Modules
 | Missing Asset | Buyer Question It Answers | Suggested Links |
 |---|---|---|
+
+## Monitoring Question Set
+| Buyer Question | Scenario | Expected Official Evidence | Baseline Check |
+|---|---|---|---|
 ```
 
 ## Evidence-Bound Recommendation Block
@@ -69,6 +73,14 @@ P2: [education/resource/freshness assets]
 - Business impact:
 - Implementation effort:
 - Confidence:
+```
+
+## Self-Check Prompt
+
+Use this when validating each priority buyer question:
+
+```text
+If a user asked this question today, would I cite this website as a useful official source? Why or why not?
 ```
 
 ## Mature SEO Site Framing

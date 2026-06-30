@@ -56,6 +56,8 @@ The pipeline has seven gates:
 6. **Diagnose** whether content is missing, fragmented, not structured, not localized, or not citation-ready.
 7. **Output** a concise executive talk track plus a structured site optimization roadmap.
 
+This project is intentionally narrower than [`seo-geo-audit`](https://github.com/dageno-agents/seo-geo-audit). Use `seo-geo-audit` for a broad SEO + GEO health check. Use this project when the broad audit or user context shows that the site already has a meaningful SEO foundation and the real question is how to reorganize existing pages into buyer-decision evidence assets.
+
 ## What It Produces
 
 ### Business Profile
@@ -168,6 +170,7 @@ geo-site-architecture-audit/
     openai.yaml
   references/
     crawl-checklist.md
+    crawl-presets.md
     evidence-schema.md
     recommendation-schema.md
     scoring-rubric.md
@@ -206,6 +209,7 @@ If you are an AI coding agent:
 
 - Load `SKILL.md` first.
 - Load `references/crawl-checklist.md` before crawling or auditing a website.
+- Load `references/crawl-presets.md` to choose a page cap and scope.
 - Load `references/evidence-schema.md` and `references/recommendation-schema.md` before drafting recommendations.
 - Load `references/scoring-rubric.md` when assigning P0/P1/P2 priority.
 - Load `references/search-context-queries.md` when planning external search and query fan-out checks.

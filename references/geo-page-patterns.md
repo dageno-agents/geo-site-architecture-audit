@@ -53,6 +53,13 @@ Recommended modules:
 - third-party reviews or proof
 - restricted regions or limitations
 
+Entity consistency checks:
+
+- Organization identity and sameAs links align with official social/profile pages.
+- Regulatory, license, or certification claims link to official sources where possible.
+- Legal, privacy, complaint, support, and contact pages are internally connected.
+- Structured data, if present, matches visible content and uses stable entity references.
+
 ## Platform / Tool / Integration Pages
 
 GEO purpose:
@@ -82,6 +89,21 @@ Recommended modules:
 - "next step" links to products, pricing, demo, or contact
 - related buyer questions
 - author/update metadata where relevant
+
+## Structured Data And Entity Graph
+
+GEO purpose:
+
+- Help search systems and downstream AI surfaces understand page entities, not create unsupported claims.
+
+Recommended checks:
+
+- Organization, Product/Service, Article, FAQ, Breadcrumb, Review, LocalBusiness, or FinancialService schema is used only when it matches visible page content.
+- Entity identifiers are stable across page templates.
+- sameAs/profile links point to official and consistent external profiles.
+- FAQ schema matches visible FAQ blocks.
+- Breadcrumb schema matches visible site hierarchy.
+- Avoid isolated schema blocks that contradict the page, hide claims, or create entity confusion.
 
 ## Comparison / Alternatives Pages
 

@@ -17,6 +17,18 @@ The core rule:
 
 > Do not start from generic content distribution advice. First understand the business and existing website architecture from crawl and search evidence, then recommend how the site should become more AI-citable, comparable, and recommendation-ready.
 
+## Relationship To `seo-geo-audit`
+
+Use `seo-geo-audit` first when the user needs a broad SEO + GEO health check covering technical SEO, on-page SEO, EEAT, entity authority, off-site signals, and platform readiness.
+
+Use this skill when:
+
+- the broad audit already shows a mature SEO foundation
+- the user asks specifically for site architecture, sitemap, navigation, pricing/account pages, trust/legal pages, help center, or landing-page structure
+- the goal is to turn existing pages into buyer-decision evidence assets rather than produce a general audit score
+
+If the user's request is simply "run a full SEO/GEO audit", prefer `seo-geo-audit`. If the request is "this site already has strong SEO; how should we improve GEO through the site structure?", use this skill.
+
 ## Required Inputs
 
 Infer what you can:
@@ -40,6 +52,8 @@ If the user gives only a URL, proceed.
    - Inspect homepage, primary nav, footer nav, sitemap, robots, and high-value internal links.
    - Prioritize product/service pages, pricing/plan/account pages, trust/legal pages, support/help center, docs, academy/blog/resources, comparison pages, and conversion pages.
    - Read `references/crawl-checklist.md` when planning crawl coverage.
+   - Read `references/crawl-presets.md` to choose a page cap and avoid both shallow misses and over-crawling.
+   - Check robots.txt and crawl access for major search and AI user agents when available.
 
 3. **Search external context**
    - Search brand/category/competitor/review/pricing/trust/community queries.
@@ -55,6 +69,7 @@ If the user gives only a URL, proceed.
    - Identify whether each page is citation-ready, fragmented, missing, too generic, too promotional, or not structured enough.
    - Read `references/geo-page-patterns.md` for page-type patterns.
    - Read `references/evidence-schema.md` before turning observations into recommendations.
+   - Check internal link discoverability, orphan risk, and click depth for buyer-critical pages.
 
 6. **Diagnose gaps**
    - Distinguish:
@@ -65,6 +80,9 @@ If the user gives only a URL, proceed.
      - weak trust/compliance proof
      - weak localization or inconsistent region routing
      - education content that does not connect to conversion
+     - AI/search crawler access issues
+     - orphaned or deeply buried buyer-critical pages
+     - structured data/entity graph mismatch with visible content
 
 7. **Produce output**
    - Default to a concise executive talk track when the user is preparing for a boss/client meeting.
@@ -74,6 +92,7 @@ If the user gives only a URL, proceed.
    - Use `references/recommendation-schema.md` for evidence-bound recommendations.
    - Use `references/scoring-rubric.md` when assigning P0/P1/P2.
    - Use `references/search-context-queries.md` when planning external search and query fan-out checks.
+   - Include a monitoring question set for priority buyer decisions when the user asks how to validate results over time.
    - For regulated categories, read `references/regulated-industries.md`.
 
 ## Output Principles
@@ -89,6 +108,7 @@ If the user gives only a URL, proceed.
 - Do not present `llms.txt`, special AI markup, or exact-query page multiplication as required for Google AI visibility.
 - Avoid claiming guaranteed AI ranking or financial/medical/legal outcomes.
 - If crawl was partially blocked, state the limitation and use available pages/search evidence.
+- For priority buyer questions, include a self-check: "Would I cite this website for this answer today? Why or why not?"
 
 ## Default Executive Structure
 
@@ -117,6 +137,7 @@ Provide a short version the user can say aloud.
 ## Reference Files
 
 - `references/crawl-checklist.md`: crawl targets and evidence capture checklist.
+- `references/crawl-presets.md`: page-cap presets and crawl scope selection.
 - `references/evidence-schema.md`: minimum evidence fields for site observations.
 - `references/recommendation-schema.md`: required fields for evidence-bound recommendations.
 - `references/scoring-rubric.md`: public P0/P1/P2 prioritization rubric.

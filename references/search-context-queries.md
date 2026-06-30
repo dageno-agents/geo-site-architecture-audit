@@ -81,3 +81,4 @@ Gaps to check on official site:
 - Use fan-out to understand evidence needs, not to mass-produce pages.
 - Prefer improving existing high-value pages over creating thin exact-match pages.
 - Record which external sources AI or users are likely to trust.
+- Check whether official profiles, review platforms, communities, directories, and regulators use the same brand/category language as the website.
