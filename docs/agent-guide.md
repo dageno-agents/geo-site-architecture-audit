@@ -11,7 +11,8 @@ Use this guide when executing the skill end to end.
 5. Build the business profile before making recommendations.
 6. Map existing pages to GEO decision scenarios.
 7. Diagnose gaps as missing, fragmented, weakly structured, unlocalized, or not citation-ready.
-8. Output executive talk track first; implementation roadmap second if needed.
+8. Bind each material recommendation to URL evidence, buyer question, gap type, priority, and confidence.
+9. Output executive talk track first; implementation roadmap second if needed.
 
 ## Evidence To Capture
 
@@ -32,6 +33,9 @@ Use this guide when executing the skill end to end.
 - If trust/legal pages exist but are scattered, recommend a Trust Center or Safety Hub.
 - If education content exists but does not link to conversion assets, recommend next-step modules.
 - If the site has multiple region/language variants, check whether buyer-critical pages exist in each target language.
+- Do not recommend GEO hacks by default; use normal crawlability, helpful content, page structure, internal links, and evidence clarity as the foundation.
+- Recommend schema only when it matches visible content and ordinary search eligibility.
+- Do not treat `llms.txt` or special AI markup as required for Google AI visibility.
 
 ## Fallbacks
 

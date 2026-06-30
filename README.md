@@ -98,6 +98,18 @@ The default output is executive-friendly:
 | `P1` | Product, scenario, and platform pages that expand recommendation coverage |
 | `P2` | Education, news, glossary, and resource pages that support early discovery |
 
+Each material recommendation should be evidence-bound:
+
+| Field | Meaning |
+|---|---|
+| `priority` | P0 / P1 / P2 |
+| `buyer_question` | The user or AI question the recommendation answers |
+| `existing_evidence` | URLs and observed facts supporting the diagnosis |
+| `gap_type` | missing, fragmented, weakly_structured, unlocalized, or not_citation_ready |
+| `recommended_page_or_module` | The page, module, FAQ, internal-link, or schema change |
+| `business_impact` | Why this matters for conversion, trust, or recommendation coverage |
+| `confidence` | high / medium / low based on crawl and search evidence |
+
 ## Why Site Architecture Matters For GEO
 
 AI systems rarely recommend a brand because one page says "we are the best."
@@ -156,11 +168,29 @@ geo-site-architecture-audit/
     openai.yaml
   references/
     crawl-checklist.md
+    evidence-schema.md
+    recommendation-schema.md
+    scoring-rubric.md
+    search-context-queries.md
     geo-page-patterns.md
     output-templates.md
     regulated-industries.md
+    industry-playbooks/
+      b2b-saas.md
+      finance-trading.md
+      ecommerce.md
+      local-services.md
+  examples/
+    mature-saas.expected.md
+    regulated-finance.expected.md
+    multi-region-site.expected.md
+  evals/
+    trigger-prompts.md
+    non-trigger-prompts.md
+    output-quality-checklist.md
   docs/
     agent-guide.md
+    measurement.md
     security.md
 ```
 
@@ -176,9 +206,13 @@ If you are an AI coding agent:
 
 - Load `SKILL.md` first.
 - Load `references/crawl-checklist.md` before crawling or auditing a website.
+- Load `references/evidence-schema.md` and `references/recommendation-schema.md` before drafting recommendations.
+- Load `references/scoring-rubric.md` when assigning P0/P1/P2 priority.
+- Load `references/search-context-queries.md` when planning external search and query fan-out checks.
 - Load `references/geo-page-patterns.md` when mapping pages to GEO assets.
 - Load `references/output-templates.md` before writing executive or implementation outputs.
 - Load `references/regulated-industries.md` for financial, medical, legal, insurance, investment, or other high-trust categories.
+- Load an industry playbook from `references/industry-playbooks/` when the target business clearly matches one.
 - Never produce generic content-distribution advice before inspecting the customer's actual site architecture.
 
 ## Open-Core Boundary

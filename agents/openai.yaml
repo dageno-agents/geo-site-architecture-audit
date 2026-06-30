@@ -1,3 +1,7 @@
-display_name: GEO Site Architecture Audit
-short_description: Crawl a real site and turn its architecture into GEO-ready content recommendations.
-default_prompt: Analyze this website's business, sitemap, and page architecture, then recommend GEO site-structure improvements for an executive audience.
+interface:
+  display_name: "GEO Site Architecture Audit"
+  short_description: "Map real site architecture to GEO recommendations."
+  default_prompt: "Use $geo-site-architecture-audit to analyze this website's business, sitemap, navigation, page architecture, and external search context, then recommend GEO site-structure improvements for an executive audience."
+
+policy:
+  allow_implicit_invocation: true

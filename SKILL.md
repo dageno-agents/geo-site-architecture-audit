@@ -1,6 +1,12 @@
 ---
 name: geo-site-architecture-audit
-description: Audit a customer website's business, sitemap, navigation, landing pages, pricing/account pages, help center, trust/legal pages, and external search context, then produce GEO-ready site architecture and content optimization recommendations. Use when the user wants to crawl a site before advising GEO, adapt strategy for a mature SEO website, map pages to buyer questions, find missing site sections, improve internal content structure, or prepare an executive talk track based on real website evidence.
+description: >
+  Audit a real customer website's business, sitemap, navigation, landing pages,
+  pricing/account pages, help center, trust/legal pages, regional architecture,
+  and external search context before making GEO/AEO/AI-search recommendations.
+  Use for mature SEO sites, buyer-decision mapping, missing or fragmented page
+  diagnosis, site evidence architecture, and executive talk tracks. Do not use
+  for generic content calendars, offsite-only PR plans, or backlink-only audits.
 ---
 
 # GEO Site Architecture Audit
@@ -48,6 +54,7 @@ If the user gives only a URL, proceed.
    - Map existing pages to buyer questions: selection, pricing, comparison, trust, risk, setup, integration, use case, and conversion.
    - Identify whether each page is citation-ready, fragmented, missing, too generic, too promotional, or not structured enough.
    - Read `references/geo-page-patterns.md` for page-type patterns.
+   - Read `references/evidence-schema.md` before turning observations into recommendations.
 
 6. **Diagnose gaps**
    - Distinguish:
@@ -64,6 +71,9 @@ If the user gives only a URL, proceed.
    - Include P0/P1/P2 site optimization priorities.
    - Recommend concrete page modules, internal links, FAQ/schema opportunities, and missing sections.
    - Read `references/output-templates.md` before drafting.
+   - Use `references/recommendation-schema.md` for evidence-bound recommendations.
+   - Use `references/scoring-rubric.md` when assigning P0/P1/P2.
+   - Use `references/search-context-queries.md` when planning external search and query fan-out checks.
    - For regulated categories, read `references/regulated-industries.md`.
 
 ## Output Principles
@@ -72,6 +82,11 @@ If the user gives only a URL, proceed.
 - Acknowledge strong SEO foundations when present.
 - Translate GEO into buyer-decision language: "AI can see it, cite it, compare it, and recommend it."
 - Make recommendations page-structure specific: comparison pages, pricing explanations, trust centers, FAQ blocks, internal links, schema, localized pages.
+- Bind material recommendations to evidence: observed URL, fact, gap type, priority, and confidence.
+- Do not recommend GEO hacks by default.
+- Treat GEO as buyer-decision evidence architecture built on crawlable, useful, well-structured SEO assets.
+- Recommend schema only when it matches visible page content and supports normal search/rich-result eligibility.
+- Do not present `llms.txt`, special AI markup, or exact-query page multiplication as required for Google AI visibility.
 - Avoid claiming guaranteed AI ranking or financial/medical/legal outcomes.
 - If crawl was partially blocked, state the limitation and use available pages/search evidence.
 
@@ -102,6 +117,10 @@ Provide a short version the user can say aloud.
 ## Reference Files
 
 - `references/crawl-checklist.md`: crawl targets and evidence capture checklist.
+- `references/evidence-schema.md`: minimum evidence fields for site observations.
+- `references/recommendation-schema.md`: required fields for evidence-bound recommendations.
+- `references/scoring-rubric.md`: public P0/P1/P2 prioritization rubric.
+- `references/search-context-queries.md`: query fan-out and external search planning patterns.
 - `references/geo-page-patterns.md`: how common page types become GEO assets.
 - `references/output-templates.md`: concise executive and implementation templates.
 - `references/regulated-industries.md`: special handling for finance, medical, legal, insurance, and other high-trust sites.

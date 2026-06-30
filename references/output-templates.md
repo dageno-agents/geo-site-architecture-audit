@@ -49,12 +49,26 @@ P2: [education/resource/freshness assets]
 |---|---|---|---|
 
 ## P0/P1/P2 Recommendations
-| Priority | Page/Module | Why It Matters | Recommended Change |
-|---|---|---|---|
+| Priority | Buyer Question | Evidence URL | Gap Type | Recommended Change | Confidence |
+|---|---|---|---|---|---|
 
 ## Missing Pages Or Modules
 | Missing Asset | Buyer Question It Answers | Suggested Links |
 |---|---|---|
+```
+
+## Evidence-Bound Recommendation Block
+
+```markdown
+### [P0] [Recommended page or module]
+
+- Buyer question:
+- Existing evidence:
+- Gap type:
+- Why it matters for GEO:
+- Business impact:
+- Implementation effort:
+- Confidence:
 ```
 
 ## Mature SEO Site Framing
